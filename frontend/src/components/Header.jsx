@@ -339,7 +339,7 @@ const Header = () => {
                 </div>
               ) : (
                 <button
-                  className="login-button text-center d-none d-md-inline-block position-relative overflow-hidden"
+                  className="login-button text-center d-none d-md-inline-block position-relative  overflow-hidden"
                   id="login-button-desktop"
                   data-bs-toggle="collapse"
                   data-bs-target="#sidebar"
@@ -490,7 +490,7 @@ const Header = () => {
                 </div>
               ) : (
                 <button
-                  className="login-button text-center d-md-none position-relative overflow-hidden"
+                  className="login-button text-center d-md-none position-relative  overflow-hidden"
                   id="login-button-mobile"
                   data-bs-toggle="collapse"
                   data-bs-target="#sidebar"
@@ -498,6 +498,8 @@ const Header = () => {
                   aria-controls="sidebar"
                   style={{
                     transition: 'all 0.3s ease',
+                    position: 'relative',
+                    top: '-8px'
                   }}
                   onClick={addRippleEffect}
                   onTouchStart={(e) => {
